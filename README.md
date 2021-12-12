@@ -2,7 +2,7 @@
 
 The codes in this repository belong to the methodology in the manuscript entitled 'Deep learning-based multi-label tissue segmentation and density assessment from mammograms'. We implemented various types of U-nets including training from scratch and transfer learning for mammogram segmentation [1,2]. We distribute our codes with a GNU GPLv3 license. 
 
-train_valid*.ipynb files are the jupyter notebook files that shows the codes and results of the training and validation process. vXXX shows the version of each file. In each version, we validate performance of a specific model with different network depths, types of connections, loss functions, and transfer learning. We used five-fold cross-validation.  [3-13].
+train_valid*.ipynb files are the jupyter notebook files that shows the codes and results of the training and validation process. vXXX shows the version of each file. In each version, we validate performance of a specific model with different network depths, types of connections, loss functions, and transfer learning. We used five-fold cross-validation. The valid_performance_mammo_seg.xlsx file shows which file version is associated with the investigation situation. The first column in the excel file shows the model number which is indicated by the train&valid ipynb files’ last name. Performance values are provided for each validation fold separately in the table columns (val_dice1, val_dice2, …, val_dice5, val_acc1, val_acc2, … , val_acc5)  [3-13].
 
 modelXLHzc* are the U-net model creation files that has 'X' network depth. modelUnetVGG16, modelUnetVGG19, and modelUnetResNet50 are the U-net model files that have coefficients from the VGG16, the VGG19, and the ResNet50 networks [14-17].
 
