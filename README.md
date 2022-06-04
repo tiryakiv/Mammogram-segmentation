@@ -10,7 +10,7 @@ data*.py files are the data prepration files required for training, validating, 
 
 Segmentation performance evaluation codes are provided in eval_performance.m and metrics.m files under the test_img folder. Open eval_performance with Octave or Matlab, run the codes and you will see the results of evaluation metrics.
 
-image file under the test folder is an example grayscale 960x480 pixels. The corresponding ground truth label image is also 960x480 pixels where 64, 128, 192, and 255, pixel intensities represent background, adipose, fibroglandular, and pectoral muscle tissues, respectively.
+The mammogram segmentation ground truth annotation images that were used in our study are given in the "ground_truth_annotations" directory. The label images are 960x480 pixels where 64, 128, 192, and 255, pixel intensities represent background, adipose, fibroglandular, and pectoral muscle tissues, respectively.
 
 Testing instructions:
 Install Python 3.6, Tensorflow, Keras, numpy, skimage, and jupyter notebook to your computer. To test the pretrained model, you do not have to have a graphic processing unit. Here are the steps to test the pretrained model: Download all of the files and open test_unet5L_fgt_2dec21_v012.ipynb using Jupyter notebook. Execute codes and you will see the predictions under the test folder. To evaluate the test performance, run the eval_performance.m file using Octave or Matlab. You will see performance evaluation results in terms of accuracy, Dice’s similarity coefficient(DSC), and intersection over union (IoU). If you want to test the segmentation model with your own images, make sure to rename them from 0 to n-1, where n is the number of images.
