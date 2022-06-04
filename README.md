@@ -24,7 +24,7 @@ Volkan Müjdat Tiryaki, Veysel Kaplanoğlu, Deep learning-based multi-label tiss
 
 Volkan Müjdat TİRYAKİ, Veysel KAPLANOĞLU.
 
-REFERENCES
+# REFERENCES
 
 Ronneberger O, Fischer P, Brox T. U-net: Convolutional networks for biomedical image segmentation. Lect. Notes Comput. Sci. (including Subser. Lect. Notes Artif. Intell. Lect. Notes Bioinformatics) 2015;9351:234–241.
 
