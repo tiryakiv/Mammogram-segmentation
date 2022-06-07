@@ -5,7 +5,8 @@ the fibroglandular, adipose, and pectoral muscle tissue regions. The dataset inc
 Manual annotation file names are the original mammogram file name concatenated with “_LI”, which stands for “labelled image”. Mammograms and the manual annotations have
 a resolution of 960x480. 64, 128, 192, and 255 intensity pixels in the manual annotations show background, adipose tissue, fibroglandular tissue, and pectoral muscle
 tissue regions, respectively. The images are grayscale. Mammograms and manual annotations  are located under fgt_seg and fgt_seg_labels subdirectories of train_valid and
-test directories. These are the training, validation, and test mammograms that were used for modelling the mammogram segmentation in our article. You may find the
-methods about preprocessing of mammograms and manual annotations in our journal article.
+test directories. These are the training, validation, and test mammograms that were used for modelling the mammogram segmentation in our article. We have given the names
+of the cross-validation file names in the supplementary materials document. You may find the methods about preprocessing of mammograms and manual annotations in our
+journal article.
 
 The Authors
