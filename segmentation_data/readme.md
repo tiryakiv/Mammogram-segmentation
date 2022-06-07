@@ -1,4 +1,4 @@
-Digital Database for Screening Mammography segmentation annotation data
+# Digital Database for Screening Mammography segmentation annotation data
 
 The images files in this directory are 66 Digital Database for Screening Mammography (DDSM) mammograms and the corresponding manual annotations of mammograms which show
 the fibroglandular, adipose, and pectoral muscle tissue regions. The dataset includes manual annotations for 16 Type A, 20 Type B, 17 Type C, and 13 Type D mammograms.
