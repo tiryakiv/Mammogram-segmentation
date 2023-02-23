@@ -12,10 +12,14 @@ Segmentation performance evaluation codes are provided in eval_performance.m and
 
 The mammogram segmentation ground truth annotation images and mammograms that were used in our study are given in the "segmentation_data" directory. The label images are 960x480 pixels where 64, 128, 192, and 255, pixel intensities represent background, adipose, fibroglandular, and pectoral muscle tissues, respectively.
 
-Testing instructions:
-Install Python 3.6, Tensorflow, Keras, numpy, skimage, and jupyter notebook to your computer. To test the pretrained model, you do not have to have a graphic processing unit. Here are the steps to test the pretrained model: Download all of the files and open test_unet5L_fgt_2dec21_v012.ipynb using Jupyter notebook. Execute codes and you will see the predictions under the test folder. To evaluate the test performance, run the eval_performance.m file using Octave or Matlab. You will see performance evaluation results in terms of accuracy, Dice’s similarity coefficient(DSC), and intersection over union (IoU). If you want to test the segmentation model with your own images, make sure to rename them from 0 to n-1, where n is the number of images.
+## Testing instructions:
+Install Python 3.6, Tensorflow, Keras, numpy, skimage, and jupyter notebook to your computer. To test the pretrained model, you do not have to have a graphic processing unit. Here are the steps to test the pretrained model: Download all of the files and open test_ResNet50Unet_fgt_2dec21_v001.ipynb using Jupyter notebook. Download the ResNet50Unet from the following link:
 
-Training instructions:
+https://drive.google.com/file/d/1aGidcMxjubGsYZlD8WA8HHZ-kNekcm8d/view?usp=sharing
+
+Execute codes and you will see the predictions under the test folder. To evaluate the test performance, run the eval_performance.m file using Octave or Matlab. You will see performance evaluation results in terms of accuracy, Dice’s similarity coefficient(DSC), and intersection over union (IoU). If you want to test the segmentation model with your own images, make sure to rename them from 0 to n-1, where n is the number of images.
+
+## Training instructions:
 You should have a GPU on your computer to train a model. If you have a GPU on your computer, make sure that you install drivers correctly. This requires attention. We found the following youtube video by Dr. Jeff Heaton very useful for instructions about installing Tensorflow Keras with a GPU for Windows operating systems: https://www.youtube.com/watch?v=-Q6SM_usn84 He also has installation instruction videos for other OS, so check to see his channel. Install Python 3.6, Tensorflow, Keras, numpy, skimage, and jupyter notebook to your computer. You can also train your own model on Google Colab but there are some time restrictions. You can see the codes and segmentation results of five-layer Unet with Tversky loss function in our paper, in train_valid_unet5L_fgt_27nov21_v012.ipynb. You can see the training results of ResNet50-U-net in train_valid_uResNet50_tve_fgt_3dec21_v020.ipynb. If you want to train a model yourself, download mammogram dataset, apply pre-processing described in the paper, move the mammograms and labels to the folders, open one of the train_valid_*.ipynb with jupyter notebook, and run the codes. Lower the batch size if you get memory errors.
 
 For more information, please refer to our manuscript or contact us by sending an e-mail to corresponding author (tiryakiv@siirt.edu.tr). Please consider citing our following article if you find the content useful for your research. 
