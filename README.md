@@ -19,6 +19,15 @@ https://drive.google.com/file/d/1aGidcMxjubGsYZlD8WA8HHZ-kNekcm8d/view?usp=shari
 
 Execute codes and you will see the predictions under the test folder. To evaluate the test performance, run the eval_performance.m file using Octave or Matlab. You will see performance evaluation results in terms of accuracy, Dice’s similarity coefficient(DSC), and intersection over union (IoU). If you want to test the segmentation model with your own images, make sure to rename them from 0 to n-1, where n is the number of images.
 
+Example 6 test mammogram files are located under the following address:
+
+https://github.com/tiryakiv/Mammogram-segmentation/tree/main/segmentation_data/test/fgt_seg
+
+There are 6 test mammograms. You should download them, and rename as the files as 0.png , 1.png , 2.png , 3.png , 4.png, 5.png. Then you should move the six test files under your
+test path, which may look like this:
+
+'path-on-computer\Mammogram-segmentation-main\fgt_seg07\test\pred\'
+
 ## Training instructions:
 You should have a GPU on your computer to train a model. If you have a GPU on your computer, make sure that you install drivers correctly. This requires attention. We found the following youtube video by Dr. Jeff Heaton very useful for instructions about installing Tensorflow Keras with a GPU for Windows operating systems: https://www.youtube.com/watch?v=-Q6SM_usn84 He also has installation instruction videos for other OS, so check to see his channel. Install Python 3.6, Tensorflow, Keras, numpy, skimage, and jupyter notebook to your computer. You can also train your own model on Google Colab but there are some time restrictions. You can see the codes and segmentation results of five-layer Unet with Tversky loss function in our paper, in train_valid_unet5L_fgt_27nov21_v012.ipynb. You can see the training results of ResNet50-U-net in train_valid_uResNet50_tve_fgt_3dec21_v020.ipynb. If you want to train a model yourself, download mammogram dataset, apply pre-processing described in the paper, move the mammograms and labels to the folders, open one of the train_valid_*.ipynb with jupyter notebook, and run the codes. Lower the batch size if you get memory errors.
 
