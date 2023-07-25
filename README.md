@@ -28,7 +28,7 @@ test path, which may look like this:
 
 'path-on-computer\Mammogram-segmentation-main\fgt_seg07\test\pred\'
 
-The corresponding ground truth mammogram annotations are located here:
+The corresponding test mammogram ground truth annotations are located here:
 
 https://github.com/tiryakiv/Mammogram-segmentation/tree/main/segmentation_data/test/fgt_seg_labels
 
